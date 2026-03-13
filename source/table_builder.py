@@ -1,10 +1,10 @@
 import csv
 import collections
-import dataclasses
+from dataclasses import dataclass
 import pprint
 
 
-@dataclasses.dataclass
+@dataclass
 class Entry:
     homography: str   # "Type" in the TSV file.
     reading: str      # "Reading" in the TSV file.
