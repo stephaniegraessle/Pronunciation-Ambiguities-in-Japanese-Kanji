@@ -76,9 +76,10 @@ def main() -> None:
         x = vectorizer.fit_transform(feature_vectors)
         # Here I'm using some lightly tuned hyperparameters.
         model = sklearn.linear_model.LogisticRegression(
-            penalty="l1",
+            l1_ratio=0, # previously penalty='l1', deprecated
+            # pentalty='l1' == l1_ratio=1, but 1 did not work with non-"liblinear" solvers 
             C=10,
-            solver="liblinear",
+            solver="lbfgs", # previously "liblinear", doesn't work with multiclass classification
         )
         model.fit(x, y)
         dev_path = train_path.replace("/train/", "/dev/")
