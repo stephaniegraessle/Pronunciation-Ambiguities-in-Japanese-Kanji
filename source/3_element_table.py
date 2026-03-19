@@ -1,7 +1,7 @@
 import re
 
 
-GSD = "gsd.tsv"
+GSD = "/home/sgraessle/Pronunciation-Ambiguities-in-Japanese-Kanji/data/gsd.tsv"
 
 
 def main() -> None:

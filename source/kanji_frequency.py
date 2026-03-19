@@ -4,8 +4,8 @@ import collections
 import pprint
 
 
-JITEN = "jiten.tsv"
-GSD = "gsd.conllu"
+JITEN = "/home/sgraessle/Pronunciation-Ambiguities-in-Japanese-Kanji/data/jiten.tsv"
+GSD = "/home/sgraessle/Pronunciation-Ambiguities-in-Japanese-Kanji/data/gsd.tsv"
 
 
 @dataclasses.dataclass

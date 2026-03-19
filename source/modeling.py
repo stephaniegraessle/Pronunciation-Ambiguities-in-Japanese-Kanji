@@ -16,7 +16,7 @@ FeatureVector = Dict[str, str]
 FeatureVectors = List[FeatureVector]
 
 
-TRAIN_TSV = "data/train/*.tsv"
+TRAIN_TSV = "/home/sgraessle/Pronunciation-Ambiguities-in-Japanese-Kanji/data/train/*.tsv"
 
 
 def _token_feature(tokens: List[str], index: int) -> str:

@@ -12,7 +12,7 @@ class Entry:
 
 def main() -> None:
     table = collections.defaultdict(list)
-    with open("jiten_revised.tsv", "r") as source:
+    with open("/home/sgraessle/Pronunciation-Ambiguities-in-Japanese-Kanji/data/jiten.tsv", "r") as source:
         reader = csv.reader(source, delimiter = "\t")
         for homograph, reading, homography in reader:
             table[homograph].append(Entry(homography, reading))
